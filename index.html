@@ -13,6 +13,23 @@
     <div style="color:white"> 
   <h2 style="text-align:center"><kbd>Photographic</kbd></h2>
     </div>
+
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar">
+    </div>
+  </div>
+</div>
+<script> 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
 <hr>
 
 <div class="topnav">
@@ -49,6 +66,7 @@
 <div class="img-container">
   <img src="https://cdn.glitch.com/c01e63fe-e1c5-48b6-8695-4685892961b9%2F84713678_1494764844030709_5494764000660946944_n.jpg?v=1582915457183" alt="image10" style="width:100%">
 </div>
+
 
 <hr>
 </body>
